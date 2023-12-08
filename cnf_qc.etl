@@ -95,7 +95,6 @@ rule Root
 		s.includes.add(m);
 	}
 	measure_qslice = s;
-	//seq_qbits.forEach(i | o.qbits.add(i) );
 }
 
 rule Clause 
@@ -179,7 +178,6 @@ operation grover_mirror() : Bag {
 	
 	
 	var nots2 = emfTools.ecoreutil.copy(nots1);
-	//nots2.sequencenumber = seq_slice;
 	seq_slice++;
 	
 	var hadamards2 = hadamard_input_qbits();
